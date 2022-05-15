@@ -3,6 +3,7 @@
 ## Main idea
 
 The main idea of the channel codes can be formulated as following thesises:
+
 - **noise immunity** of the signal should be increased;
 - **redundant bits** are added for *error detection* and *error correction*;
 - some special algorithms (<u>coding schemes</u>) are used for this.
@@ -17,12 +18,12 @@ In the case of binary codes, the minimum distance between all existing code word
 
 <img src="https://raw.githubusercontent.com/veeresht/CommPy/master/commpy/channelcoding/doc/assets/FECexamp2.png" alt="examp2" width="400"/>
 
-
 ## Classification
 
 Some classification is needed to talk about those or other implementations of the encoding and decoding algorithms.
 
 First, the channel codes:
+
 - can only [*detect*](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) the presence of errors
 - and they can also [*correct* errors](https://en.wikipedia.org/wiki/Error_correction_code).
 
@@ -31,6 +32,7 @@ Secondly, codes can be classified as **block** and **continuous**:
 ![](https://raw.githubusercontent.com/veeresht/CommPy/master/commpy/channelcoding/doc/assets/BlockCont.png)
 
 ## Net bit rate
+
 Redundancy of the channel coding schemes influences (decreases) bit rate. Actually, it is the cost for the noiseless increasing.
 [**Net bit rate**](https://en.wikipedia.org/wiki/Bit_rate#Information_rate) concept is usually used:
 
@@ -93,10 +95,11 @@ tb_depth = 5*(m.sum() + 1) # traceback depth
 ```
 
 Two oppitions of the Viterbi decoder will be tested:
+
 - *hard* (hard inputs)
 - *unquatized* (soft inputs)
 
-Additionally, uncoded case will be considered. 
+Additionally, uncoded case will be considered.
 
 Simulation loop:
 
